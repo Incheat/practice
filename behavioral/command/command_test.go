@@ -4,8 +4,8 @@ import "testing"
 
 func TestCommand(t *testing.T) {
 	light := &Light{}
-	onCmd := LightOnCommand{light: light}
-	offCmd := LightOffCommand{light: light}
+	onCmd := LightOnCommand{Light: light}
+	offCmd := LightOffCommand{Light: light}
 
 	onCmd.Execute()
 	if !light.OnState {

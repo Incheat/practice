@@ -12,13 +12,13 @@ func (l *Light) On()  { l.OnState = true }
 func (l *Light) Off() { l.OnState = false }
 
 type LightOnCommand struct {
-	light *Light
+	Light *Light
 }
 
-func (c LightOnCommand) Execute() { c.light.On() }
+func (c LightOnCommand) Execute() { c.Light.On() }
 
 type LightOffCommand struct {
-	light *Light
+	Light *Light
 }
 
-func (c LightOffCommand) Execute() { c.light.Off() }
+func (c LightOffCommand) Execute() { c.Light.Off() }

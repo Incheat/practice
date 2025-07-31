@@ -6,7 +6,7 @@ import (
 	// Creational
 	"example.com/go-design-pattern/creational/singleton"
 	"example.com/go-design-pattern/creational/factory"
-	"go-design-patterns/creational/abstractfactory"
+	"example.com/go-design-pattern/creational/abstractfactory"
 	"example.com/go-design-pattern/creational/builder"
 	"example.com/go-design-pattern/creational/prototype"
 

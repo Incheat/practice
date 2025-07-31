@@ -11,10 +11,10 @@ func (EmailNotifier) Send(msg string) {
 }
 
 type SlackDecorator struct {
-	notifier Notifier
+	Notifier Notifier
 }
 
 func (s SlackDecorator) Send(msg string) {
-	s.notifier.Send(msg)
+	s.Notifier.Send(msg)
 	println("Slack:", msg)
 }

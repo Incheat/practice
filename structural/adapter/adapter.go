@@ -15,9 +15,9 @@ type NewPrinter interface {
 }
 
 type Adapter struct {
-	oldPrinter OldPrinter
+	OldPrinter OldPrinter
 }
 
 func (a Adapter) PrintNew(msg string) {
-	a.oldPrinter.PrintOld(msg)
+	a.OldPrinter.PrintOld(msg)
 }
